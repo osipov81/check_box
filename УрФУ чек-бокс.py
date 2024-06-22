@@ -1,5 +1,5 @@
 # импорт необходимых библиотек
-from tkinter *
+from tkinter*
 from tkinter import ttk
 
 # настройки окна
