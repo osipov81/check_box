@@ -1,14 +1,15 @@
 # импорт необходимых библиотек
-from tkinter import *
+from tkinter import 
 from tkinter import ttk
- # настройки окна
+
+# настройки окна
 root = Tk()
 root.title("УрФУ Осипов чек-бокс")
 root.geometry("550x550")
  
 variants = ["выполнено", "выполнено частично", "не прикасался еще", "оставить на пересдачу"] # спикок для выпадающего окна
 
- # функция перебора уловий для переменных
+# функция перебора уловий для переменных
 def select():
     result = "Проверено: "
     if SQL.get() == 1: result = f"{result} SQL, "
@@ -20,7 +21,7 @@ def select():
     if ML_base.get() == 1: result = f"{result} Математические основы машинного обучения, "
     if practicum.get() == 1: result = f"{result} Цифровые компетенции в научной деятельности, "
     subjects.set(result)
- # настройки окна
+# настройки окна
 position = {"padx":1, "pady":1, "anchor":NW}
  
 subjects = StringVar()
