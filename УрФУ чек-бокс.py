@@ -1,5 +1,4 @@
 # импорт необходимых библиотек
-import tkinter
 from tkinter import *
 from tkinter import ttk
 
@@ -11,7 +10,7 @@ root.geometry("550x550")
 variants = ["выполнено", "выполнено частично", "не прикасался еще", "оставить на пересдачу"] # спикок для выпадающего окна
 
 # функция перебора уловий для переменных
-def select():
+def select(): 
     result = "Проверено: "
     if SQL.get() == 1: result = f"{result} SQL, "
     if python.get() == 1: result = f"{result} Углубленное программирование на Python, "
