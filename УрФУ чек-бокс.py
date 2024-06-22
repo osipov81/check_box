@@ -1,6 +1,6 @@
 # импорт необходимых библиотек
 import tkinter
-from tkinter *
+from tkinter import *
 from tkinter import ttk
 
 # настройки окна
